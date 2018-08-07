@@ -35,7 +35,8 @@ obj.getLang = function(fileExt){
     case 'c': return LANG_C;
     case 'java': return LANG_JAVA;
     case 'cc':
-    case 'cpp': return LANG_CPP11;
+    case 'cpp': 
+    case 'cxx': return LANG_CPP11;
     case 'p':
     case 'pascal':
     case 'pas': return LANG_PASCAL;
