@@ -8,7 +8,7 @@ const util = require('./util');
 const RequestClient = require('./requestClient');
 const Adapter = require('./adapter');
 
-const UVA_HOST = "uva.onlinejudge.org";
+const UVA_HOST = "onlinejudge.org";
 const SUBMIT_PAGE_PATH = "/index.php?option=com_onlinejudge&Itemid=25";
 const SUBMIT_PATH = "/index.php?option=com_onlinejudge&Itemid=25&page=save_submission";
 const PROBLEM_PATH = "/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=";
