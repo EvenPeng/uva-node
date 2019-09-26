@@ -304,6 +304,7 @@ module.exports = (function(parentCls){
         }
 
         var r = {
+            online: true,
             action: form.action,
             data: {},
         };
