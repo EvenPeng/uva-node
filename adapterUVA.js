@@ -98,6 +98,8 @@ module.exports = (function(parentCls){
                     var err = null;
                     if (!f)
                         err = ("cannot find HTML form");
+                    else if (!f.online)
+                        err = ("server offline");
                     else if (!f.userField)
                         err = ("cannot find user field");
                     else if (!f.passField)
@@ -296,6 +298,8 @@ module.exports = (function(parentCls){
     cls.parseForm = function(document){
         const form = document.getElementById("mod_loginform");
         if (! form) {
+            if (document.title == "Online Judge - Offline")
+                return {online: false};
             return null;
         }
 
