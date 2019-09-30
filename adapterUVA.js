@@ -298,7 +298,7 @@ module.exports = (function(parentCls){
     cls.parseForm = function(document){
         const form = document.getElementById("mod_loginform");
         if (! form) {
-            if (document.title == "Online Judge - Offline")
+            if (/offline/i.test(document.title))
                 return {online: false};
             return null;
         }
